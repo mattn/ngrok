@@ -14,7 +14,7 @@ fmt:
 	go fmt ngrok/...
 
 client: deps
-	go install -gcflags "-N -l" -tags '$(BUILDTAGS)' ngrok/main/ngrok
+	go install -gcflags "-N" -tags '$(BUILDTAGS)' ngrok/main/ngrok
 
 assets: client-assets server-assets
 
